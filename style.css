@@ -111,14 +111,21 @@ form button:hover {
    RESPONSIVIDADE PARA CELULAR
 ========================== */
 @media (max-width: 600px) {
-  nav ul {
-    flex-direction: column; /* menu vertical */
-    gap: 10px;
+  /* Menu */
+  nav {
+    height: auto; /* deixa o menu se ajustar */
     padding: 10px 0;
   }
 
+  nav ul {
+    flex-direction: column; /* menu vertical */
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* Corpo do site */
   body {
-    padding-top: 150px; /* mais espaço se o menu ficar maior */
+    padding-top: 120px; /* espaço suficiente para o menu em celular */
   }
 
   section {
