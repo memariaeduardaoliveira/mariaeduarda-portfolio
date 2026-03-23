@@ -1,0 +1,148 @@
+/* =========================
+   RESET BÁSICO
+   ========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #ffe6f0; /* fundo clarinho rosa */
+    color: #333;
+}
+
+/* =========================
+   MENU DE NAVEGAÇÃO
+   ========================= */
+nav {
+    background-color: #ff4da6; /* rosa forte */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #e60073; /* rosa escuro */
+    border-radius: 5px;
+}
+
+/* =========================
+   SEÇÕES
+   ========================= */
+section {
+    padding: 100px 20px 50px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Títulos das seções */
+section h1 {
+    margin-bottom: 20px;
+    color: #ff4da6;
+    text-align: center;
+    font-size: 2em;
+}
+
+/* Parágrafos */
+section p {
+    margin-bottom: 15px;
+}
+
+/* Listas (Portfólio e Formação) */
+section ul {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+/* =========================
+   FORMULÁRIO DE CONTATO
+   ========================= */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ffb3d9;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button {
+    padding: 10px;
+    background-color: #ff4da6; /* rosa forte */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #e60073; /* rosa escuro */
+}
+
+/* =========================
+   LINKS
+   ========================= */
+a {
+    color: #ff4da6;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   RESPONSIVO
+   ========================= */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+}
+
+/* =========================
+   MENSAGEM DE SUCESSO
+   ========================= */
+#mensagemSucesso {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #e60073;
+    text-align: center;
+}
